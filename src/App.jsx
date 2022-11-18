@@ -39,7 +39,7 @@ const PageWrapper = styled.div`
 
 const TagsWrapper = styled.div`
     display: flex;
-    flex-warp: wrap;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 400px;
     justify-content: center;
@@ -184,7 +184,7 @@ const App = () => {
                 <TagsWrapper>
                     {allValidGuess.map((e, i) => {
                         return (
-                            <Tags key={i} className="code" title="hello world">
+                            <Tags key={i} className="code">
                                 {e}{' '}
                                 <Info
                                     color={theme.contrast}
