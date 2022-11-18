@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/rumble-game/static/css/main.622339fa.css",
-    "main.js": "/rumble-game/static/js/main.ea581e91.js",
+    "main.js": "/rumble-game/static/js/main.1190f900.js",
     "static/js/787.caae6bb5.chunk.js": "/rumble-game/static/js/787.caae6bb5.chunk.js",
+    "service-worker.js": "/rumble-game/service-worker.js",
     "index.html": "/rumble-game/index.html",
     "main.622339fa.css.map": "/rumble-game/static/css/main.622339fa.css.map",
-    "main.ea581e91.js.map": "/rumble-game/static/js/main.ea581e91.js.map",
+    "main.1190f900.js.map": "/rumble-game/static/js/main.1190f900.js.map",
     "787.caae6bb5.chunk.js.map": "/rumble-game/static/js/787.caae6bb5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.622339fa.css",
-    "static/js/main.ea581e91.js"
+    "static/js/main.1190f900.js"
   ]
 }
