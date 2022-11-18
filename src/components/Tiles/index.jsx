@@ -46,8 +46,7 @@ export const Tile = styled.div`
         color : ${theme.text};
         box-shadow : inset 0 0 5px 5px rgba(0,0,0,0.3),
         0px 0px 10px -4px ${theme.primary};
-        `
-    }
+        `}
 
     &:hover{
         background-color : ${({ theme }) => theme.orange};

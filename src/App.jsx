@@ -97,7 +97,7 @@ const tourConfig = [
     },
     {
         selector: '[data-tut="reactour__eraser"]',
-        content: `Just in case you're in a hurry! here's the eraser tool for faster clear field ;)`
+        content: `Just in case you're in a hurry! here's the eraser tool for faster clear field ;)`,
     },
     {
         selector: '[data-tut="reactour__last"]',
