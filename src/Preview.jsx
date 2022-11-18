@@ -49,7 +49,7 @@ const FinalScore = styled.div`
     text-align: center;
     color: ${({ theme }) => theme.orange};
     font-family: 'Archivo Black', sans-serif;
-    font-size: 5em;
+    font-size: 3em;
     padding: 30px 0;
 `
 
