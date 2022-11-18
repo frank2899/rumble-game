@@ -1,0 +1,70 @@
+{
+    "homepage": "http://frank2899.github.io/rumble-game/",
+    "name": "rumble-game",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@anatoliygatt/dark-mode-toggle": "^1.0.0",
+        "@reduxjs/toolkit": "^1.9.0",
+        "prop-types": "^15.8.1",
+        "random-words": "^1.2.0",
+        "react": "^16.14.0",
+        "react-bootstrap-icons": "^1.9.1",
+        "react-circular-progressbar": "^2.1.0",
+        "react-dom": "^16.14.0",
+        "react-redux": "^8.0.5",
+        "react-router-dom": "^6.4.3",
+        "react-scripts": "5.0.1",
+        "reactour": "^1.18.7",
+        "redux": "^4.2.0",
+        "styled-components": "^5.3.6",
+        "web-vitals": "^2.1.4"
+    },
+    "scripts": {
+        "start": "DISABLE_ESLINT_PLUGIN=true react-scripts start",
+        "build": "DISABLE_ESLINT_PLUGIN=true react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix",
+        "format:check": "prettier --check '**/*.{js,jsx,ts,tsx}'",
+        "format:write": "prettier --write '**/*.{js,jsx,ts,tsx}'",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "eslint": "^8.27.0",
+        "eslint-config-google": "^0.14.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-react": "^7.31.10",
+        "gh-pages": "^4.0.0",
+        "prettier": "^2.7.1"
+    },
+    "prettier": {
+        "semi": false,
+        "singleQuote": true,
+        "trailingComma": "all",
+        "bracketSpacing": true,
+        "arrowParens": "always",
+        "tabWidth": 4
+    }
+}
