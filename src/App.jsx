@@ -1,4 +1,4 @@
-import { Suspense, useEffect, useState } from 'react'
+import { Suspense, useEffect } from 'react'
 import styled from 'styled-components'
 import AnswerInput from './components/Inputs'
 import TextTiles from './components/Tiles'
@@ -13,9 +13,7 @@ import CountdownTimer from './components/Timer'
 import Preview from './Preview'
 import useClockTimer from './hooks/useClockTimer'
 import SplashScreen from './components/splash'
-import Tour from 'reactour'
 import Footer from './components/Footer'
-import { TOUR_CONFIG } from './constants/config'
 
 const AppTitle = styled.h1`
     text-align: center;
@@ -85,20 +83,11 @@ const App = () => {
     const { createJumbleLetters } = useGeneratedRumble()
     const { allValidGuess } = useGuess()
     const { points } = useGuessPoints()
-    const { timeRemaining, ResumeTimer } = useClockTimer()
-    const [isTourOpen, setTourOpen] = useState(
-        localStorage?.getItem('rumble_tuts') ? false : true,
-    )
+    const { timeRemaining } = useClockTimer()
 
     useEffect(() => {
         createJumbleLetters()
     }, [])
-
-    const closeTour = () => {
-        localStorage.setItem('rumble_tuts', 'done')
-        setTourOpen(false)
-        ResumeTimer()
-    }
 
     return (
         <Suspense fallback={<SplashScreen />}>
@@ -175,14 +164,6 @@ const App = () => {
 
                 {timeRemaining ? '' : <Preview />}
             </PageWrapper>
-
-            <Tour
-                closeWithMask={false}
-                onRequestClose={closeTour}
-                steps={TOUR_CONFIG}
-                isOpen={isTourOpen}
-                rounded={5}
-            />
             <Footer />
         </Suspense>
     )

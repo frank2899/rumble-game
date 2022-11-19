@@ -1,6 +1,7 @@
 import { ArrowCounterclockwise } from 'react-bootstrap-icons'
 import styled from 'styled-components'
 import useGuessPoints from './hooks/useGuessPoints'
+import useResetGame from './hooks/useResetGame'
 
 const Wrapper = styled.div`
     display: flex;
@@ -55,11 +56,7 @@ const FinalScore = styled.div`
 
 const Preview = (props) => {
     const { points } = useGuessPoints()
-
-    // Soon will be replaced by useRestartGame hook!!
-    const refresh = () => {
-        location.reload()
-    }
+    const resetGame = useResetGame()
 
     return (
         <Wrapper>
@@ -69,7 +66,7 @@ const Preview = (props) => {
                 <ScoreWord>
                     FINAL SCORE{' '}
                     <ArrowCounterclockwise
-                        onClick={() => refresh()}
+                        onClick={() => resetGame()}
                         style={{
                             cursor: 'pointer',
                             fontSize: '1.5em',

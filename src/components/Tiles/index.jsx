@@ -44,14 +44,14 @@ export const Tile = styled.div`
         `
         background-color : ${theme.orange};
         color : ${theme.text};
-        box-shadow : inset 0 0 5px 5px rgba(0,0,0,0.3),
+        box-shadow : inset 0 0 5px 3px rgba(0,0,0,0.2),
         0px 0px 10px -4px ${theme.primary};
         `}
 
     &:hover{
         background-color : ${({ theme }) => theme.orange};
         color : ${({ theme }) => theme.text};
-        box-shadow : inset 0 0 5px 5px rgba(0,0,0,0.3),
+        box-shadow : inset 0 0 5px 5px rgba(0,0,0,0.2),
         0px 0px 10px -4px ${({ theme }) => theme.primary};
     }
 `

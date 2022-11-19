@@ -1,9 +1,9 @@
 import { useValidGuess } from '../state/letters/hook'
 
 const useGuess = () => {
-    const [allValidGuess, setValidGuess] = useValidGuess()
+    const [allValidGuess, setValidGuess, resetValidGuess] = useValidGuess()
 
-    return { allValidGuess, setValidGuess }
+    return { allValidGuess, setValidGuess, resetValidGuess }
 }
 
 export default useGuess

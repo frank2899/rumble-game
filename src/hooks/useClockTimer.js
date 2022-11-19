@@ -4,7 +4,7 @@ import { useTimer } from '../state/timer/hook'
 
 const useClockTimer = () => {
     const [timeRemaining, updateTimer] = useTimer()
-    const restartTimer = () => updateTimer(DEFAULT_TIMER)
+    const restartTimer = (type = DEFAULT_TIMER) => updateTimer(type)
     const [isPause, setPause] = useState(true)
 
     const PauseTimer = () => setPause(true)

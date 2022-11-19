@@ -1,4 +1,5 @@
 import {
+    resetValidGuess,
     updateGeneratedLetters,
     updateInputWords,
     updatePoints,
@@ -31,5 +32,9 @@ export default createReducer(initialState, (builder) =>
             if (action === 'INCREMENT') state.points += 100
             if (action === 'DECREMENT')
                 state.points = state.points - 20 <= 0 ? 0 : state.points - 20
+            if (action === 'RESET') state.points = 0
+        })
+        .addCase(resetValidGuess, (state) => {
+            state.validGuess = []
         }),
 )

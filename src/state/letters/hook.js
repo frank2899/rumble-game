@@ -5,6 +5,7 @@ import {
     updateInputWords as updateInputWordsAction,
     updateValidGuess as updateValidGuessAction,
     updatePoints as updatePointsAction,
+    resetValidGuess as resetValidGuessAction,
 } from './action'
 
 export const useGeneratedText = () => {
@@ -59,7 +60,11 @@ export const useValidGuess = () => {
         [dispatch],
     )
 
-    return [allValidGuess, setValidGuess]
+    const resetValidGuess = useCallback(() => {
+        dispatch(resetValidGuessAction())
+    }, [dispatch])
+
+    return [allValidGuess, setValidGuess, resetValidGuess]
 }
 
 export const usePoints = () => {
