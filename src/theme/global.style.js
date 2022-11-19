@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import overlayBg from '../image/overlayBg.png'
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -21,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
     top : 0;
     left : 0;
     z-index : -1000;
-    background: url('/overlayBg.png') no-repeat;
+    background: url(${overlayBg}) no-repeat;
     background-attachment : fixed;
     background-size : auto 1000px;
     background-position : center;
