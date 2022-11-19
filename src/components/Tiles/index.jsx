@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react'
 import { EraserFill } from 'react-bootstrap-icons'
 import styled from 'styled-components'
+import useGeneratedRumble from '../../hooks/useGeneratedRumble'
 import useInputField from '../../hooks/useInputWords'
 import useTheme from '../../hooks/useTheme'
 import { types } from './types'
@@ -57,27 +57,19 @@ export const Tile = styled.div`
 `
 
 const TextTiles = (props) => {
-    const [letters, setLetters] = useState(null)
+    const { generatedLetters } = useGeneratedRumble()
     const { inputWords, setInputWords } = useInputField()
     const { theme } = useTheme()
 
-    const stringToArray = () => props.data.split('')
     const isSelected = (letter) => {
         return inputWords.indexOf(letter) !== -1 ? true : false
     }
 
-    useEffect(() => {
-        if (!props.data) return
-
-        if (typeof props.data === 'string') setLetters(stringToArray())
-        if (typeof props.data === 'object') setLetters(props.data)
-    }, [props?.data])
-
     return (
-        letters && (
+        generatedLetters?.length && (
             <CustomWrapper {...props}>
                 <TilesWrapper>
-                    {letters?.map((e, i) => (
+                    {generatedLetters?.map((e, i) => (
                         <Tile
                             key={i}
                             {...props}

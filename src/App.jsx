@@ -7,7 +7,6 @@ import useGuess from './hooks/useGuess'
 import useGuessPoints from './hooks/useGuessPoints'
 import useTheme from './hooks/useTheme'
 import GlobalStyle from './theme/global.style'
-import { jumbleRumbleLetters } from './utils/generate.rumble'
 import { DarkModeToggle } from '@anatoliygatt/dark-mode-toggle'
 import { BrightnessHigh, CupHot, Info, Moon } from 'react-bootstrap-icons'
 import CountdownTimer from './components/Timer'
@@ -16,6 +15,7 @@ import useClockTimer from './hooks/useClockTimer'
 import SplashScreen from './components/splash'
 import Tour from 'reactour'
 import Footer from './components/Footer'
+import { TOUR_CONFIG } from './constants/config'
 
 const AppTitle = styled.h1`
     text-align: center;
@@ -79,35 +79,10 @@ const DonationBtn = styled.a`
     font-size: 0.8em;
     cursor: pointer;
 `
-const tourConfig = [
-    {
-        content: `Hello newbiee!, here's a quick tour for you. Hope it helps!`,
-    },
-    {
-        selector: '[data-tut="reactour__timer_points"]',
-        content: `We have a Clock timer here, for every correct words you submit it resets the timer and also you will gain points!`,
-    },
-    {
-        selector: '[data-tut="reactour__field"]',
-        content: `You will input the letters here.`,
-    },
-    {
-        selector: '[data-tut="reactour__tile"]',
-        content: `These are shuffled and random letters for you, Try to submit many words as much as you can with this given letters, and if you dont feel like typing, you can tap the tiles to input your letters on field.`,
-    },
-    {
-        selector: '[data-tut="reactour__eraser"]',
-        content: `Just in case you're in a hurry! here's the eraser tool for faster clear field ;)`,
-    },
-    {
-        selector: '[data-tut="reactour__last"]',
-        content: `Yaaay!! Dark mode and light mode is also available , Dont forget to help me buy coffee it boost my energy to build more awesome applications! have fun!`,
-    },
-]
 
 const App = () => {
     const { isDark, toggleTheme, theme } = useTheme()
-    const { generatedLetters, setGeneratedLetters } = useGeneratedRumble()
+    const { createJumbleLetters } = useGeneratedRumble()
     const { allValidGuess } = useGuess()
     const { points } = useGuessPoints()
     const { timeRemaining, ResumeTimer } = useClockTimer()
@@ -116,7 +91,7 @@ const App = () => {
     )
 
     useEffect(() => {
-        setGeneratedLetters(jumbleRumbleLetters())
+        createJumbleLetters()
     }, [])
 
     const closeTour = () => {
@@ -196,11 +171,7 @@ const App = () => {
                     })}
                 </TagsWrapper>
 
-                <TextTiles
-                    data={generatedLetters}
-                    fontSize="2rem"
-                    data-tut="reactour__tile"
-                />
+                <TextTiles fontSize="2rem" data-tut="reactour__tile" />
 
                 {timeRemaining ? '' : <Preview />}
             </PageWrapper>
@@ -208,7 +179,7 @@ const App = () => {
             <Tour
                 closeWithMask={false}
                 onRequestClose={closeTour}
-                steps={tourConfig}
+                steps={TOUR_CONFIG}
                 isOpen={isTourOpen}
                 rounded={5}
             />
