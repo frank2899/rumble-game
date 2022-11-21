@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { DEFAULT_TIMER } from '../constants/config'
+import { DEFAULT_TIMER, LS_TOUR } from '../constants/config'
 import { useTimer } from '../state/timer/hook'
 
 const useClockTimer = () => {
@@ -11,7 +11,7 @@ const useClockTimer = () => {
     const ResumeTimer = () => setPause(false)
 
     useEffect(() => {
-        if (localStorage?.getItem('rumble_tuts')) return ResumeTimer()
+        if (localStorage?.getItem(LS_TOUR)) return ResumeTimer()
 
         PauseTimer()
     }, [isPause])

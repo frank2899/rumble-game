@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/rumble-game/static/css/main.fdded5b6.css",
-    "main.js": "/rumble-game/static/js/main.7040ad95.js",
-    "static/js/52.9e9f0b7d.chunk.js": "/rumble-game/static/js/52.9e9f0b7d.chunk.js",
+    "main.js": "/rumble-game/static/js/main.e82f4ae3.js",
+    "static/js/52.e7264b27.chunk.js": "/rumble-game/static/js/52.e7264b27.chunk.js",
     "static/css/491.da446dc6.chunk.css": "/rumble-game/static/css/491.da446dc6.chunk.css",
-    "static/js/491.78de6bf6.chunk.js": "/rumble-game/static/js/491.78de6bf6.chunk.js",
+    "static/js/491.425b43d7.chunk.js": "/rumble-game/static/js/491.425b43d7.chunk.js",
     "static/js/787.caae6bb5.chunk.js": "/rumble-game/static/js/787.caae6bb5.chunk.js",
     "static/js/467.3a47e711.chunk.js": "/rumble-game/static/js/467.3a47e711.chunk.js",
     "static/js/235.1e7b9f6b.chunk.js": "/rumble-game/static/js/235.1e7b9f6b.chunk.js",
@@ -12,16 +12,16 @@
     "service-worker.js": "/rumble-game/service-worker.js",
     "index.html": "/rumble-game/index.html",
     "main.fdded5b6.css.map": "/rumble-game/static/css/main.fdded5b6.css.map",
-    "main.7040ad95.js.map": "/rumble-game/static/js/main.7040ad95.js.map",
-    "52.9e9f0b7d.chunk.js.map": "/rumble-game/static/js/52.9e9f0b7d.chunk.js.map",
+    "main.e82f4ae3.js.map": "/rumble-game/static/js/main.e82f4ae3.js.map",
+    "52.e7264b27.chunk.js.map": "/rumble-game/static/js/52.e7264b27.chunk.js.map",
     "491.da446dc6.chunk.css.map": "/rumble-game/static/css/491.da446dc6.chunk.css.map",
-    "491.78de6bf6.chunk.js.map": "/rumble-game/static/js/491.78de6bf6.chunk.js.map",
+    "491.425b43d7.chunk.js.map": "/rumble-game/static/js/491.425b43d7.chunk.js.map",
     "787.caae6bb5.chunk.js.map": "/rumble-game/static/js/787.caae6bb5.chunk.js.map",
     "467.3a47e711.chunk.js.map": "/rumble-game/static/js/467.3a47e711.chunk.js.map",
     "235.1e7b9f6b.chunk.js.map": "/rumble-game/static/js/235.1e7b9f6b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fdded5b6.css",
-    "static/js/main.7040ad95.js"
+    "static/js/main.e82f4ae3.js"
   ]
 }

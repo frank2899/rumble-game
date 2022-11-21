@@ -65,47 +65,45 @@ const TextTiles = (props) => {
         return inputWords.indexOf(letter) !== -1 ? true : false
     }
 
-    return (
-        generatedLetters?.length && (
-            <CustomWrapper {...props}>
-                <TilesWrapper>
-                    {generatedLetters?.map((e, i) => (
-                        <Tile
-                            key={i}
-                            {...props}
-                            onClick={() => setInputWords(`${inputWords}${e}`)}
-                            selected={isSelected(e)}
-                        >
-                            {e}
-                        </Tile>
-                    ))}
+    return generatedLetters?.length ? (
+        <CustomWrapper {...props}>
+            <TilesWrapper>
+                {generatedLetters?.map((e, i) => (
                     <Tile
-                        onClick={() => setInputWords('')}
-                        data-tut="reactour__eraser"
+                        key={i}
+                        {...props}
+                        onClick={() => setInputWords(`${inputWords}${e}`)}
+                        selected={isSelected(e)}
                     >
-                        <EraserFill
-                            style={{
-                                color: theme.text,
-                                fontSize: '1.5em',
-                            }}
-                        />
+                        {e}
                     </Tile>
-                    <Tile
-                        onClick={() =>
-                            setInputWords(inputWords.replace(/.$/, ''))
-                        }
-                        data-tut="reactour__eraser"
-                    >
-                        <XLg
-                            style={{
-                                color: theme.text,
-                                fontSize: '1.5em',
-                            }}
-                        />
-                    </Tile>
-                </TilesWrapper>
-            </CustomWrapper>
-        )
+                ))}
+                <Tile
+                    onClick={() => setInputWords('')}
+                    data-tut="reactour__eraser"
+                >
+                    <EraserFill
+                        style={{
+                            color: theme.text,
+                            fontSize: '1.5em',
+                        }}
+                    />
+                </Tile>
+                <Tile
+                    onClick={() => setInputWords(inputWords.replace(/.$/, ''))}
+                    data-tut="reactour__eraser"
+                >
+                    <XLg
+                        style={{
+                            color: theme.text,
+                            fontSize: '1.5em',
+                        }}
+                    />
+                </Tile>
+            </TilesWrapper>
+        </CustomWrapper>
+    ) : (
+        ''
     )
 }
 

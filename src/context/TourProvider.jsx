@@ -1,16 +1,16 @@
 import { Fragment, useState } from 'react'
-import { TOUR_CONFIG } from '../constants/config'
+import { LS_TOUR, TOUR_CONFIG } from '../constants/config'
 import useClockTimer from '../hooks/useClockTimer'
 import Tour from 'reactour'
 
 const TourProvider = ({ children }) => {
     const { ResumeTimer } = useClockTimer()
     const [isTourOpen, setTourOpen] = useState(
-        localStorage?.getItem('rumble_tuts') ? false : true,
+        localStorage?.getItem(LS_TOUR) ? false : true,
     )
 
     const closeTour = () => {
-        localStorage.setItem('rumble_tuts', 'done')
+        localStorage.setItem(LS_TOUR, 'done')
         setTourOpen(false)
         ResumeTimer()
     }
