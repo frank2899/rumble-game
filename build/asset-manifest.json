@@ -1,27 +1,27 @@
 {
   "files": {
     "main.css": "/rumble-game/static/css/main.fdded5b6.css",
-    "main.js": "/rumble-game/static/js/main.c7454d7f.js",
+    "main.js": "/rumble-game/static/js/main.7040ad95.js",
     "static/js/52.9e9f0b7d.chunk.js": "/rumble-game/static/js/52.9e9f0b7d.chunk.js",
-    "static/css/77.fafc29d0.chunk.css": "/rumble-game/static/css/77.fafc29d0.chunk.css",
-    "static/js/77.766a2a8f.chunk.js": "/rumble-game/static/js/77.766a2a8f.chunk.js",
+    "static/css/491.da446dc6.chunk.css": "/rumble-game/static/css/491.da446dc6.chunk.css",
+    "static/js/491.78de6bf6.chunk.js": "/rumble-game/static/js/491.78de6bf6.chunk.js",
     "static/js/787.caae6bb5.chunk.js": "/rumble-game/static/js/787.caae6bb5.chunk.js",
     "static/js/467.3a47e711.chunk.js": "/rumble-game/static/js/467.3a47e711.chunk.js",
-    "static/js/40.88914517.chunk.js": "/rumble-game/static/js/40.88914517.chunk.js",
+    "static/js/235.1e7b9f6b.chunk.js": "/rumble-game/static/js/235.1e7b9f6b.chunk.js",
     "static/media/overlayBg.png": "/rumble-game/static/media/overlayBg.e5efaf4c66cd92440710.png",
     "service-worker.js": "/rumble-game/service-worker.js",
     "index.html": "/rumble-game/index.html",
     "main.fdded5b6.css.map": "/rumble-game/static/css/main.fdded5b6.css.map",
-    "main.c7454d7f.js.map": "/rumble-game/static/js/main.c7454d7f.js.map",
+    "main.7040ad95.js.map": "/rumble-game/static/js/main.7040ad95.js.map",
     "52.9e9f0b7d.chunk.js.map": "/rumble-game/static/js/52.9e9f0b7d.chunk.js.map",
-    "77.fafc29d0.chunk.css.map": "/rumble-game/static/css/77.fafc29d0.chunk.css.map",
-    "77.766a2a8f.chunk.js.map": "/rumble-game/static/js/77.766a2a8f.chunk.js.map",
+    "491.da446dc6.chunk.css.map": "/rumble-game/static/css/491.da446dc6.chunk.css.map",
+    "491.78de6bf6.chunk.js.map": "/rumble-game/static/js/491.78de6bf6.chunk.js.map",
     "787.caae6bb5.chunk.js.map": "/rumble-game/static/js/787.caae6bb5.chunk.js.map",
     "467.3a47e711.chunk.js.map": "/rumble-game/static/js/467.3a47e711.chunk.js.map",
-    "40.88914517.chunk.js.map": "/rumble-game/static/js/40.88914517.chunk.js.map"
+    "235.1e7b9f6b.chunk.js.map": "/rumble-game/static/js/235.1e7b9f6b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fdded5b6.css",
-    "static/js/main.c7454d7f.js"
+    "static/js/main.7040ad95.js"
   ]
 }

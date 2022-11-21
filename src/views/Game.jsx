@@ -9,6 +9,7 @@ import CountdownTimer from '../components/Timer'
 import useClockTimer from '../hooks/useClockTimer'
 import GuessTags from '../components/GuessTag'
 import TourProvider from '../context/TourProvider'
+import Preview from '../Preview'
 
 const AppTitle = styled.h1`
     text-align: center;
