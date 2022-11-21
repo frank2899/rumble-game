@@ -15,11 +15,11 @@
         "react-redux": "^8.0.5",
         "react-router-dom": "^6.4.3",
         "react-scripts": "5.0.1",
+        "react-tooltip": "^4.5.0",
         "reactour": "^1.18.7",
         "redux": "^4.2.0",
         "styled-components": "^5.3.6",
         "web-vitals": "^2.1.4",
-
         "workbox-background-sync": "^6.5.4",
         "workbox-broadcast-update": "^6.5.4",
         "workbox-cacheable-response": "^6.5.4",
@@ -31,7 +31,8 @@
         "workbox-range-requests": "^6.5.4",
         "workbox-routing": "^6.5.4",
         "workbox-strategies": "^6.5.4",
-        "workbox-streams": "^6.5.4" 
+        "workbox-streams": "^6.5.4",
+        "framer-motion": "^4.1.16"
     },
     "scripts": {
         "start": "DISABLE_ESLINT_PLUGIN=true react-scripts start",

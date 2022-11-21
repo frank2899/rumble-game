@@ -1,4 +1,4 @@
-import { EraserFill } from 'react-bootstrap-icons'
+import { EraserFill, XLg } from 'react-bootstrap-icons'
 import styled from 'styled-components'
 import useGeneratedRumble from '../../hooks/useGeneratedRumble'
 import useInputField from '../../hooks/useInputWords'
@@ -22,8 +22,8 @@ export const TilesWrapper = styled.div`
 export const Tile = styled.div`
     padding : 15px;
     border-radius : .8rem;
-    width : 80px;
-    height : 80px;
+    width : ${({ width }) => width || '80px'};
+    height : ${({ height }) => height || '80px'};
     display : flex;
     align-items : center;
     justify-content : center;
@@ -33,7 +33,7 @@ export const Tile = styled.div`
     color : ${({ theme }) => theme.text};
     ${({ fontSize }) => `font-size : ${fontSize};`}
     font-weight : bolder;
-    transition : all .3s ease;
+    // transition : all .3s ease;
     cursor : pointer;
     user-select: none;
     box-shadow : 0px 0px 10px -4px ${({ theme }) => theme.primary};
@@ -84,6 +84,19 @@ const TextTiles = (props) => {
                         data-tut="reactour__eraser"
                     >
                         <EraserFill
+                            style={{
+                                color: theme.text,
+                                fontSize: '1.5em',
+                            }}
+                        />
+                    </Tile>
+                    <Tile
+                        onClick={() =>
+                            setInputWords(inputWords.replace(/.$/, ''))
+                        }
+                        data-tut="reactour__eraser"
+                    >
+                        <XLg
                             style={{
                                 color: theme.text,
                                 fontSize: '1.5em',

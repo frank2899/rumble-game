@@ -27,7 +27,9 @@ const GlobalStyle = createGlobalStyle`
     background-size : auto 1000px;
     background-position : center;
   }
-
+  .text-decoration-none{
+    text-decoration : none
+  }
 `
 
 export default GlobalStyle

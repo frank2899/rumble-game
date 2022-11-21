@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import overlayBg from '../image/overlayBg.png'
 
 const Wrapper = styled.div`
     display: flex;
@@ -20,7 +21,7 @@ const Wrapper = styled.div`
         top: 0;
         left: 0;
         z-index: 99;
-        background: url('/overlayBg.png') no-repeat;
+        background-color: ${({ theme }) => theme.background};
         background-attachment: fixed;
         background-size: auto 1000px;
         background-position: center;
