@@ -4,12 +4,13 @@ const Motion = (props) => {
     return (
         <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            animate={{
+                opacity: 1,
+            }}
             exit={{ opacity: 0 }}
             transition={{
-                duration: 1.5,
+                duration: 2,
                 default: { ease: 'linear' },
-                delay: 1,
             }}
         >
             {props.children}

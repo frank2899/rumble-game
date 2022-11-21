@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/rumble-game/static/css/main.fdded5b6.css",
-    "main.js": "/rumble-game/static/js/main.227cab77.js",
-    "static/js/52.229e2d12.chunk.js": "/rumble-game/static/js/52.229e2d12.chunk.js",
+    "main.js": "/rumble-game/static/js/main.c7454d7f.js",
+    "static/js/52.9e9f0b7d.chunk.js": "/rumble-game/static/js/52.9e9f0b7d.chunk.js",
     "static/css/77.fafc29d0.chunk.css": "/rumble-game/static/css/77.fafc29d0.chunk.css",
     "static/js/77.766a2a8f.chunk.js": "/rumble-game/static/js/77.766a2a8f.chunk.js",
     "static/js/787.caae6bb5.chunk.js": "/rumble-game/static/js/787.caae6bb5.chunk.js",
@@ -12,8 +12,8 @@
     "service-worker.js": "/rumble-game/service-worker.js",
     "index.html": "/rumble-game/index.html",
     "main.fdded5b6.css.map": "/rumble-game/static/css/main.fdded5b6.css.map",
-    "main.227cab77.js.map": "/rumble-game/static/js/main.227cab77.js.map",
-    "52.229e2d12.chunk.js.map": "/rumble-game/static/js/52.229e2d12.chunk.js.map",
+    "main.c7454d7f.js.map": "/rumble-game/static/js/main.c7454d7f.js.map",
+    "52.9e9f0b7d.chunk.js.map": "/rumble-game/static/js/52.9e9f0b7d.chunk.js.map",
     "77.fafc29d0.chunk.css.map": "/rumble-game/static/css/77.fafc29d0.chunk.css.map",
     "77.766a2a8f.chunk.js.map": "/rumble-game/static/js/77.766a2a8f.chunk.js.map",
     "787.caae6bb5.chunk.js.map": "/rumble-game/static/js/787.caae6bb5.chunk.js.map",
@@ -22,6 +22,6 @@
   },
   "entrypoints": [
     "static/css/main.fdded5b6.css",
-    "static/js/main.227cab77.js"
+    "static/js/main.c7454d7f.js"
   ]
 }
